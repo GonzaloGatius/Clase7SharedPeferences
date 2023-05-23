@@ -23,7 +23,7 @@ class RegisterActivity : AppCompatActivity() {
 
         buttonContinueToLogin.setOnClickListener {
             if (editTextEnterName.text.isNullOrEmpty() && editTextEnterPassword.text.isNullOrEmpty()) {
-                Toast.makeText(this,"Ingrese un nombre y password válido", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Ingrese nombre y password", Toast.LENGTH_SHORT).show()
             }
             else{
                 val userName = editTextEnterName.text.toString()
