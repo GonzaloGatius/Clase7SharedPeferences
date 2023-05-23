@@ -20,8 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         val preferences = getSharedPreferences("LoginPref", MODE_PRIVATE)
         val userName = preferences.getString("name", "")
+        val password = preferences.getString("pass", "")
 
-        if (userName != null) {
+        if (userName != null && password != null) {
             if (userName.isEmpty()) {
                 buttonToAction.text = "Registrar"
                 buttonToAction.setOnClickListener {
